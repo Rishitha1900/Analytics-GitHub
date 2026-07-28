@@ -1,2 +1,2 @@
 {{ config(materialized='table') }}
- select * from {{ ref('country') }}
+ select *, 'MT' as company_name from {{ ref('country') }}
